@@ -5,6 +5,7 @@ body{
     color: var(--black);
     font-family: "Poppins", serif;
     font-size: 16px;
+    background-color: var(--white);
 }
 :root{
     --acsent: #A5058E;
@@ -12,6 +13,8 @@ body{
     --gray: #706D70;
     --secondary-text: #260120;
     --main-bg: #F1F1F1;
+    --white: #fff;
+
 }
 .container{
     
@@ -19,6 +22,10 @@ body{
     padding-left: 30px;
     padding-right: 30px;
     margin: 0 auto;
+}
+.section-title {
+    font-size: 34px;
+    font-weight: 600;
 }
 
 /* ----  HEADER----- */
@@ -65,6 +72,9 @@ body{
 }
 .nav-link {
     color: var(--black);
+}
+.nav-link:hover{
+    color: var(--acsent);
 }
 .nav-link.active{
     color: var(--gray);
@@ -123,3 +133,82 @@ body{
     font-size: 14px;
     line-height: 2;
 }
+/* -----PORTFOLIO------ */
+.portfolio {
+    background-color: var(--main-bg);
+    padding: 90px 0;
+}
+
+.portfolio-title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.projects-list {
+    text-align: center;
+    max-width: 930px;
+    margin: 0 auto;
+}
+
+.prject-img {
+    width: 930px;
+    height: 500px;
+    margin-bottom: 40px;
+}
+.project-item:not(:last-child){
+    margin-bottom: 90px;
+}
+.project-title a{
+    font-size: 18px;
+    color: var(--secondary-text);
+    text-decoration: underline;
+}
+/* -----FOOTER----- */
+.contacts {
+    padding: 90px 0;
+    text-align: center;
+}
+.contacts-container{
+   width: 296px;
+   margin: 0 auto;
+   
+}
+.contacts-title {
+    margin-bottom: 40px;
+}
+
+.contacts-content {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.contacts-btn {
+    margin-bottom: 80px;
+}
+.message-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: var(--black);
+    border-radius: 30px;
+    font-size: 18px;
+    color: var(--white);
+}
+.message-btn:hover, .message-btn:focus{
+    background-color: var(--acsent);
+}
+.contacts-sosial {
+    display: flex;
+    gap: 42px;
+    align-items: center;
+    justify-content: center;
+}
+.contact-item {
+}
+
+.sosial-icon {
+    fill: var(--gray);
+}
+.sosial-link:hover > .sosial-icon,
+.sosial-link:focus > .sosial-icon {
+    fill: var(--acsent);
+}
+
